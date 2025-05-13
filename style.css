@@ -22,7 +22,6 @@ body #main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*margin-left: 5vw;*/
     padding-left: 3vw;
     margin-top: 2vw;
     border-top: 2px solid black;
@@ -198,22 +197,20 @@ h6 i{
 #alphabets h3{
     font-style: italic;
     font-weight: 200;
-    display: inline-block;
+    display: inline-flex;
     height: 30px;
     width: 30px;
     align-items: center;
-
     justify-content: center;
 }
 #alphabets h3:hover{
     border-radius: 50%;
     border: 1px solid black;
     cursor: pointer;
-
 }
-#page1{
+#main #page1{
     height: 600px;
-    width: 100px;
+    width: 100%;
     padding: 3.5vw;
     display: flex;
     gap: 40px;
@@ -229,14 +226,14 @@ h6 i{
 }
 #page1-left img{
     width: 100%;
-    height: 100%;
+    height: 125%;
     object-fit: cover;
 }
-#page-right #right-img{
-    height: 70%;
+#page1-right #right-image{
+    height: 100%;
     width: 100%;
 }
-#right-img img{
+#right-image img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -244,6 +241,382 @@ h6 i{
 #page1-right #para{
     height: 30%;
     width: 100%;
+    padding-top: 10px;
+    display: flex;
+    position: relative;
+} 
+
+#para #para1{
+    width: 95%;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+}
+#para #para2{
+    font-weight: 400;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 5vw;
+    position: absolute;
+    margin-left: 20vw;
+
+}
+
+#main #pa{
+    margin-top: 160px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#main #page2{
+    height: 600px;
+    width: 100%;
+    padding: 3.5vw;
+    display: flex;
+    gap: 40px;
+    padding-bottom: 15px;
+}
+
+#page2-left{
+    width: 40%;
+    height: 100%;
+}
+
+#page2-left #left-image{
+    height: 100%;
+    width: 100%;
+}
+#left-image img{
+    height: 60%;
+    width: 60%;
+    margin-left: 80px;
+    margin-top: 50px;
+    object-fit: cover;
+}
+#left-image span {
+    display: flex;
+    margin-bottom: 300px;
+}
+#bottom2 span {
+    font-size: 20px;
+    font-weight: 400;
+}
+span i {
+    font-size: 40px;
+    font-weight: 100;
+}
+#page2-left #para3{
+    height: 30%;
+    width: 100%;
+    padding-top: 20px;
+} 
+#para3{
+    padding-top:20px;
+    display: flex;
+    font-size: 30px;
+    gap: 20px;
+}
+
+#page2-right{
+    width: 60%;
+    height: 100%;
+}
+#page2-right img{
+    width: 100%;
+    height: 125%;
+    object-fit: cover;
+}
+#main #page3{
+    height: 500px;
+    width: 100%;
+    padding: 3.5vw;
+    display: flex;
+    gap: 40px;
+    /*padding-bottom: 15px;*/
+}
+#page3 img{
+    width: 100%;
+    height: 155%;
+    margin-top: 100px;
+    object-fit: cover;
+}
+#main #update{
+    margin-top: 320px;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: cambria;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+}
+#main #men{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-bottom: 5vw;
+    padding-top: 2vw;
+}
+#men p:nth-last-child(1){
+    font-size:12px;
+    position: absolute;
+    padding-left:53vw;
+    bottom: 2vw;
+    
+}
+#men p:nth-last-child(2){
+    font-size:35px;
+    position: absolute;
+    margin-left: 800px;
+    /*padding-left:70vw;
+    bottom: 3vw;*/
+}
+#men p:nth-last-child(3){
+    padding-left:3vw;
+    position:absolute;
+    font-size:20px;
+    
+}
+#men #hover-image{
+    width: 2vw;
+    height: 2vw;
+    left: 20vw;
+    bottom: 4.5vw;
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 2s ease;
+}
+#hover-image img{
+    width: 6vw; /* Set your image size */
+    height: 6vw;
+    border-radius: 50%;
+}
+#hover-image:hover{
+    transform: translateX(350px);
+    cursor:pointer;
+}
+
+#main #women{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    border-bottom: 2px solid black;
+    padding-bottom: 5vw;
+    /*padding-top: 2vw;*/
+}
+#women p:nth-last-child(1){
+    font-size:12px;
+    position: absolute;
+    padding-left:53vw;
+    bottom: 2vw;
+}
+#women p:nth-last-child(2){
+    font-size:35px;
+    position: absolute;
+    margin-left: 800px;
+}
+#women p:nth-last-child(3){
+    padding-left:3vw;
+    position:absolute;
+    font-size:20px;
+}
+#women #hover-image{
+    width: 2vw;
+    height: 2vw;
+    left: 20vw;
+    bottom: 4.5vw;
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 2s ease;
+}
+#hover-image img{
+    width: 6vw; /* Set your image size */
+    height: 6vw;
+    border-radius: 50%;
+}
+#hover-image:hover{
+    transform: translateX(350px);
+    cursor:pointer;
+}
+
+
+#main #special{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    border-bottom: 2px solid black;
+    padding-bottom: 5vw;
+    /*padding-top: 2vw;*/
+}
+#special p:nth-last-child(1){
+    font-size:12px;
+    position: absolute;
+    padding-left:53vw;
+    bottom: 2vw;
+}
+#special p:nth-last-child(2){
+    font-size:35px;
+    position: absolute;
+    margin-left: 800px;
+}
+#special p:nth-last-child(3){
+    font-size: 35px;
+    position:absolute;
+    margin-left: 300px;
+}
+#special p:nth-last-child(4){
+    font-size:20px;
+    position: absolute;
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+
+#special p:nth-last-child(5){
+    padding-left:3vw;
+    position:absolute;
+    font-size:20px;
+}
+
+
+#main #model{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    border-bottom: 2px solid black;
+    padding-bottom: 5vw;
+}
+#model p:nth-last-child(1){
+    font-size:12px;
+    position: absolute;
+    padding-left:53vw;
+    bottom: 2vw;
+}
+#model p:nth-last-child(2){
+    font-size:35px;
+    position: absolute;
+    margin-left: 800px;
+}
+#model p:nth-last-child(3){
+    padding-left:3vw;
+    position:absolute;
+    font-size:20px;
+}
+
+
+#main #page4{
+    height: 600px;
+    width: 100%;
+    padding: 3.5vw;
+    display: flex;
+    gap: 40px;
+    padding-bottom: 15px;
+}
+#page4-left{
+    width: 60%;
+    height: 120%;
+}
+#page4-right{
+    width: 40%;
+    height: 100%;
+    
+}
+#page4-left img{
+    width: 100%;
+    height: 125%;
+    object-fit: cover;
+}
+#page4-right #para{
+    height: 100;
+    width: 100%;
+    padding-top: 20px;
+} 
+#para{
+    display: flex;
+    flex-direction: column;
+}
+#para #para1{
+    font-weight: 1000;
+    font-size: 30px;
+}
+#para #para2{
+    font-weight: 600;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    /*margin-top: 100px;*/
+}
+#para #para3{
+    font-weight: 400;
+    font-size: 14px;
+    font-family: cambria;
+    margin-bottom:20px;
+    margin-top: 200px;
+}
+#page4-right #right-image{
+    height: 100%;
+    width: 100%;
+}
+#right-image img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#main #page5{
+    height: 700px;
+    width: 100%;
+    padding: 3.5vw;
+    display: flex;
+    gap: 40px;
+}
+#page5 img{
+    width: 100%;
+    height: 170%;
+    margin-top: 250px;
+    object-fit: cover;
+    margin-bottom: 250px;
+}
+
+#main #page6{
+    height: 900px;
+    width: 100%;
+    padding: 3.5vw;
+    display: flex;
+    gap: 40px;
+    padding-bottom: 15px;
+    margin-top: 600px;
+}
+#page6-left{
+    width: 60%;
+    height: 100%;
+}
+#page6-right{
+    width: 40%;
+    height: 100%;
+}
+#page6-left img{
+    width: 100%;
+    height: 125%;
+    object-fit: cover;
+}
+#page6-right #right-image{
+    height: 100%;
+    width: 100%;
+}
+#right-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page6-right #para{
+    height: 30%;
+    width: 100%;
+    padding-top: 20px;
 } 
 #para{
     padding-top:20px;
@@ -252,12 +625,14 @@ h6 i{
 }
 #para #para1{
     width: 95%;
+    flex:2;
     font-weight: 700;
-    font-size: large;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
 }
 #para #para2{
     font-weight: 400;
-    font-size: medium;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    flex:1;
 }
-
-
